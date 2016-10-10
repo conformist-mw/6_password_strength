@@ -21,4 +21,6 @@ def get_password_strength(password):
 
 
 if __name__ == '__main__':
-    pass
+    print('Проверка сложности пароля. 1 — очень слабый, 10 — хороший пароль')
+    paswd = input('Введите пароль: ')
+    print('Сложность вашего пароля: {}'.format(get_password_strength(paswd)))
